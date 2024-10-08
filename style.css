@@ -1,0 +1,183 @@
+body{
+    display: flex;
+    font-family: "Montserrat";
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    background-color: #044750;
+    color: white;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+h1, p, h3, button{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #032D33;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding: auto 0;
+}
+
+.headerTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    color: white;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none; 
+    font-weight: 600;
+}
+
+.navbar ul li a:hover{
+    color: #CC70D8;
+    transition: 0.5s;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0;
+    max-width: 100vw;
+
+}
+
+
+
+.content section{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 48%;
+    gap: 20px;
+}
+
+
+.focus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+    gap: 20px;
+    
+}
+
+.focus h1{
+    font-size: clamp(4rem, 2vw, 1.2rem);
+    text-align: start;
+}
+
+.focus p{
+ font-size: clamp(2rem, 2vw, 1.2rem);
+ text-align: start;
+}
+
+.searchBar{
+    display: flex;
+    border: 3px solid black;
+    border-radius: 31px;
+}
+.searchBar input{
+    height: 8vh;
+    width: 30vw;
+    padding-left: 20px;
+    border-radius: 30px 0 0px 30px;
+    font-size: 1.4rem;
+    font-weight: 100;
+    font-style: italic;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.searchBar button{
+    width: 10vw;
+    border-radius: 0 30px 30px 0;
+    background-color: #032D33;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: white;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.searchBar button:hover{
+    background-color: #C7C6C4;
+    color: #032D33;
+    transition: 0.5s;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .carousel img {
+    width: 100%;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #032D33;
+    font-weight: 300;
+  }

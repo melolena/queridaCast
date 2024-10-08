@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>QueridaCast</title>
+</head>
+<body>
+    <header>
+        <div class="headerTitle">
+            <h1>QueridasPod</h1>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">PODCASTS</a></li>
+                        <li><a href="#">ANUNCIE</a></li>
+                    </ul>                   
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <section>
+            <div class="focus">
+                <h1>Sua dose semanal de Tecnologia</h1>
+                <p>Fique por dentro de tudo que acontece</p>
+            </div>
+            <div class="searchBar">
+                <input type="text" placeholder="Front-end; Porto Digital">
+                <button type="submit">Buscar</button>
+            </div>
+        </section>
+        <section>
+            <div class="carousel">
+                <div class="slides">
+                  <div class="slide"><img src="./img/homeWoman.jpg" alt="Mulher de cabelos longo e sorrindo, ouvindo um podcast no celular" /></div>
+                  <div class="slide"><img src="./img/homeChurch.jpg" alt="Farol de Olinda ao lado do Big Bang de Londres"></div>
+                  <div class="slide"><img src="./img/homeMan.jpg" alt="Homem ouvindo podcast"></div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 QueridasPod. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+
+        function moveSlide(direction) {
+        const slides = document.querySelector('.slides');
+        const totalSlides = slides.children.length;
+
+        currentIndex += direction;
+
+        if (currentIndex >= totalSlides) {
+            currentIndex = 0; 
+        } else if (currentIndex < 0) {
+            currentIndex = totalSlides - 1; 
+        }
+
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+    </script>
+    
+</body>
+</html>
