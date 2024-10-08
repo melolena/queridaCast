@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Podcasts</title>
+</head>
+<body>
+    <header>
+        <div class="headerTitle">
+            <h1>QueridasPod</h1>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="../../index.html">HOME</a></li>
+                        <li><a href="#" id="selecionado">PODCASTS</a></li>
+                        <li><a href="#">ANUNCIE</a></li>
+                    </ul>                   
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <h1>Podcasts</h1>
+        <div class="grid-container">
+            <div class="flip-container">
+                <div class="grid-item" onclick="toggleContent(this)">
+                    <img src="../../img/homeMan.jpg" alt="homem ouvindo podcast">
+                    <p class="description">Venha ouvir um podcast sobre novidades do mundo tech</p>
+                    <h6>NEWS</h6>
+                    <h4>EP 1 - REC'N'PLAY</h4>
+                    <svg class="start-svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 42C33.0457 42 42 33.0457 42 22C42 10.9543 33.0457 2 22 2C10.9543 2 2 10.9543 2 22C2 33.0457 10.9543 42 22 42Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 14L30 22L18 30V14Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>   
+            <div class="flip-container">
+                <div class="grid-item" onclick="toggleContent(this)">
+                    <img src="../../img/homeMan.jpg" alt="homem ouvindo podcast">
+                    <p class="description">Venha ouvir um podcast sobre novidades do mundo tech</p>
+                    <h6>NEWS</h6>
+                    <h4>EP 1 - REC'N'PLAY</h4>
+                    <svg class="start-svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 42C33.0457 42 42 33.0457 42 22C42 10.9543 33.0457 2 22 2C10.9543 2 2 10.9543 2 22C2 33.0457 10.9543 42 22 42Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 14L30 22L18 30V14Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>   
+            <div class="flip-container">
+                <div class="grid-item" onclick="toggleContent(this)">
+                    <img src="../../img/homeMan.jpg" alt="homem ouvindo podcast">
+                    <p class="description">Venha ouvir um podcast sobre novidades do mundo tech</p>
+                    <h6>NEWS</h6>
+                    <h4>EP 1 - REC'N'PLAY</h4>
+                    <svg class="start-svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 42C33.0457 42 42 33.0457 42 22C42 10.9543 33.0457 2 22 2C10.9543 2 2 10.9543 2 22C2 33.0457 10.9543 42 22 42Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 14L30 22L18 30V14Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>   
+            <div class="flip-container">
+                <div class="grid-item" onclick="toggleContent(this)">
+                    <img src="../../img/homeMan.jpg" alt="homem ouvindo podcast">
+                    <p class="description">Venha ouvir um podcast sobre novidades do mundo tech</p>
+                    <h6>NEWS</h6>
+                    <h4>EP 1 - REC'N'PLAY</h4>
+                    <svg class="start-svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 42C33.0457 42 42 33.0457 42 22C42 10.9543 33.0457 2 22 2C10.9543 2 2 10.9543 2 22C2 33.0457 10.9543 42 22 42Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 14L30 22L18 30V14Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 QueridasPod. Todos os direitos reservados.</p>
+        <picture>
+            <img src="../../img/icons8-google-podcasts-100.svg" alt="Google for Podcasts"/>
+            <img src="../../img/icons8-podcasts-da-apple.svg" alt="Apple for Podcasts"/>
+        </picture>
+    </footer>
+
+    <script>
+        function toggleContent(element) {
+            const img = element.querySelector('img');
+            const description = element.querySelector('.description');
+
+            if (img.style.opacity === '1' || img.style.opacity === '') {
+                img.style.opacity = '0.3';  // Deixa a imagem opaca
+                description.style.opacity = '1';  // Mostra o texto
+            } else {
+                img.style.opacity = '1';  // Restaura a imagem
+                description.style.opacity = '0';  // Esconde o texto
+            }
+        }
+    </script>
+</body>
+</html>

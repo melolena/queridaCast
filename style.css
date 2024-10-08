@@ -12,7 +12,7 @@ body{
     margin: 0;
     padding: 0;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:space-between;
     min-height: 100vh;
 
 }
@@ -26,7 +26,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #032D33;
     margin: 0;
     padding: 20px 0;
@@ -36,10 +36,15 @@ header{
 .headerTitle{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0 200px 0 45px;
 
+}
+
+.headerTitle h1{
+    font-size: clamp(3rem, 2vw, 1.2rem);
 }
 
 .navbar ul{
@@ -136,7 +141,7 @@ header{
 }
 
 .searchBar button:hover{
-    background-color: #C7C6C4;
+    background-color: #CC70D8;
     color: #032D33;
     transition: 0.5s;
 }
@@ -183,9 +188,22 @@ header{
   
   footer{
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    align-items: center;
     padding: 20px 0;
     background-color: #032D33;
     font-weight: 300;
     margin: 0;
+    position: relative;
   }
+
+  footer picture{
+    position: absolute;
+    bottom: 5px;
+    right: 170px;
+    gap: 10px;
+  }
+
+footer picture img{
+    max-width: 45px;
+}
