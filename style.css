@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     display: flex;
     font-family: "Montserrat";
@@ -7,7 +12,9 @@ body{
     margin: 0;
     padding: 0;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content:space-around;
+    min-height: 100vh;
+
 }
 
 h1, p, h3, button{
@@ -22,9 +29,8 @@ header{
     justify-content: space-evenly;
     background-color: #032D33;
     margin: 0;
-    padding: 0;
+    padding: 20px 0;
     position: relative;
-    padding: auto 0;
 }
 
 .headerTitle{
@@ -62,6 +68,7 @@ header{
     justify-content: space-around;
     padding: 20px 0;
     max-width: 100vw;
+    flex: 1;
 
 }
 
@@ -136,7 +143,7 @@ header{
 
 .carousel {
     position: relative;
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
     overflow: hidden;
   }
@@ -180,4 +187,5 @@ header{
     padding: 20px 0;
     background-color: #032D33;
     font-weight: 300;
+    margin: 0;
   }
