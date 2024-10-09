@@ -7,12 +7,12 @@ body {
     display: flex;
     font-family: "Montserrat";
     font-size: clamp(1rem, 2vw, 1.2rem);
-    background-color: #044750;
-    color: white;
+    background-color: #F4EBFF;
+    color: #3C0F76;
     margin: 0;
     padding: 0;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-between;
     min-height: 100vh;
 }
 
@@ -26,7 +26,9 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #032D33;
+    background: rgb(132,100,174);
+    background: linear-gradient(90deg, rgba(132,100,174,1) 0%, rgba(22,2,47,1) 100%);
+    color: white;
     margin: 0;
     padding: 20px 0;
     position: relative;
@@ -96,11 +98,11 @@ header {
 }
 
 .grid-item {
-    background-color: white;
+    background-color: #3C0F76;
     padding: 20px;
     text-align: start;
     border-radius: 8px;
-    color: #044750;
+    color: white;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -131,7 +133,7 @@ header {
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 2;
-    color: black; 
+    color: white; 
     text-align: center;
 }
 
@@ -149,30 +151,79 @@ header {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+.start-svg path{
+    stroke: #fff;
+}
+
 .start-svg:hover path{
     stroke: #CC70D8;
     transition: stroke 0.3s ease;
 
 }
 
-footer {
+.profile{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+}
+
+.profile-line{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.profile img{
+    max-width: 140px;
+}
+
+.personal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #3C0F76;
+    border-radius: 8px; 
+}
+
+.profile-line svg path{
+    fill: #3C0F76;
+  }
+
+.profile-line svg:hover path{
+    fill: #CC70D8;
+    transition: 0.5s ease;
+  }
+
+  article p{
+    padding: 2vw 10vw;
+    text-align: justify;
+  }
+
+footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
     padding: 20px 0;
-    background-color: #032D33;
     font-weight: 300;
     margin: 0;
     position: relative;
-}
+  }
 
-footer picture {
+  footer picture{
     position: absolute;
     bottom: 5px;
-    right: 170px;
-    gap: 10px;
-}
+    left: 80vw;
+  }
 
-footer picture img {
-    max-width: 45px;
+
+
+footer picture a:hover svg path {
+    fill: #CC70D8; 
+    transition: 0.3s ease;
 }
