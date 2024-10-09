@@ -227,3 +227,36 @@ footer picture a:hover svg path {
     fill: #CC70D8; 
     transition: 0.3s ease;
 }
+
+@media screen and (max-width:1025px) {
+    footer{
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      gap: 20px;
+    }
+  
+    .see-more{
+      position: absolute;
+      right: 0vw;
+      top: 20vw;
+      
+    }
+  
+    .see-more a{
+      font-size: 0.6rem;
+    }
+  
+    .carousel{
+      align-self: center;
+    }
+  }
